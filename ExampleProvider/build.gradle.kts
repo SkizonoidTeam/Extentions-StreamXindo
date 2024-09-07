@@ -8,31 +8,25 @@ version = -1
 
 
 cloudstream {
+    language = "id"
     // All of these properties are optional, you can safely remove them
 
-    description = "Lorem ipsum"
-    authors = listOf("Cloudburst")
+    // description = "Lorem Ipsum"
+    authors = listOf("SkzOfc")
 
     /**
-    * Status int as the following:
-    * 0: Down
-    * 1: Ok
-    * 2: Slow
-    * 3: Beta only
-    * */
-    status = 1
+     * Status int as the following:
+     * 0: Down
+     * 1: Ok
+     * 2: Slow
+     * 3: Beta only
+     * */
+    status = 1 // will be 3 if unspecified
+    tvTypes = listOf(
+        "AnimeMovie",
+        "Anime",
+        "OVA",
+    )
 
-    tvTypes = listOf("Movie")
-
-    requiresResources = true
-    language = "en"
-
-    // random cc logo i found
-    iconUrl = "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png"
-}
-
-android {
-    buildFeatures {
-        viewBinding = true
-    }
+    iconUrl = "https://www.google.com/s2/favicons?domain=otakudesu.cloud&sz=%size%"
 }
